@@ -1,0 +1,11 @@
+curl -X POST https://api.vitally.io/analytics/v1/track \
+  -H "Authorization: Basic [API_TOKEN]" \
+  -H "Content-Type: application/json" \
+  -d '{
+  "userId": "1234",
+  "event": "lead-sent"
+  "properties": {
+    "source": "onlineForm",
+  },
+  "timestamp": "2018-05-15T12:31:12.123Z"
+}'

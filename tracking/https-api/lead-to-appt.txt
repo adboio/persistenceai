@@ -1,0 +1,13 @@
+curl -X POST https://api.vitally.io/analytics/v1/track \
+  -H "Authorization: Basic [API_TOKEN]" \
+  -H "Content-Type: application/json" \
+  -d '{
+  "userId": "1234",
+  "event": "lead-to-appt"
+  "properties": {
+    "numberOfMessages": "10",
+    "incomingMessages": "5",
+    "outgoingMessages": "5",
+  },
+  "timestamp": "2018-05-15T12:31:12.123Z"
+}'
